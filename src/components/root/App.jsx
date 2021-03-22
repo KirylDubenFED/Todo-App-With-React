@@ -10,7 +10,7 @@ function App() {
       <header>
         <h1>ToDo List</h1>
       </header>
-      <Form />
+      <Form setInputText={setInputText} />
       <TodoList />
     </div>
   );
