@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from '../Form/Form';
 import './App.scss';
+import TodoList from '../TodoList/TodoList';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <h1>ToDo List</h1>
       </header>
       <Form />
+      <TodoList />
     </div>
   );
 }
