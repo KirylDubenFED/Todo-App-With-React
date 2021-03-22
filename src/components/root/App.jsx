@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Form from '../Form/Form';
 import './App.scss';
 import TodoList from '../TodoList/TodoList';
 
 function App() {
+  const [inputText, setInputText] = useState();
   return (
     <div className="App">
       <header>
