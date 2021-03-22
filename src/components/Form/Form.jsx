@@ -5,10 +5,13 @@ const Form = ({ setInputText }) => {
     console.log(e.target.value);
     setInputText(e.target.value);
   };
+  const submitTodoHandler = (e) => {
+    e.preventDefault();
+  };
   return (
     <form>
       <input onChange={inputTextHandler} type="text" className="todo-input" />
-      <button className="todo-button" type="submit"> </button>
+      <button onClick={submitTodoHandler} className="todo-button" type="submit"> </button>
       <div className="select">
         <select name="todos" className="filter-todo">
           <option value="all">Все задачи</option>
